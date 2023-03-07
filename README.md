@@ -1,6 +1,7 @@
 # Unity x Vuforia
 
 Repositório dedicado a mostrar uma apliação simples utilizando Unity juntamente com o Vuforia.
+
 **OBS: É esperado que você já possua o Unity instalado.**
 
 ## Configuração Vuforia
@@ -18,3 +19,6 @@ Primeiramente é necessário fazer a configuração do Vuforia.
     ![alt text](assets/vuforia-target-1.jpg "Vuforia Target")
  6. Faça o download da sua database e adicione na Unity da mesma forma que o SDK do Vuforia
 
+## Inicio do Projeto
+  Crie um novo projeto e monte sua cena adicionando o **AR Camera** e o **Target**
+  ![alt text](assets/unity-scene-1.jpg "Unity Scene")
