@@ -22,3 +22,31 @@ Primeiramente é necessário fazer a configuração do Vuforia.
 ## Inicio do Projeto
   Crie um novo projeto e monte sua cena adicionando o **AR Camera** e o **Target**
   ![alt text](assets/unity-scene-1.jpg "Unity Scene")
+
+   **OBS: Não se esqueça de adicionar a chave de API do Vuforia!**
+
+   Adicione o script abaixo a Unity, e arraste o mesmo ao cubo para que seja adicionado.
+
+   ```c#
+   using System.Collections;
+   using System.Collections.Generic;
+   using UnityEngine;
+
+   public class Rotate : MonoBehaviour
+   {
+      public Vector3 rotateAmount;
+      void Start(){}
+
+      void Update()
+      {
+         transform.Rotate(rotateAmount * Time.deltaTime);
+      }
+   }
+   ```
+
+   Ao selecionar o cubo, nos parametros do script, adicione o Rotate Amount
+   ![alt text](assets/unity-rotate-script-1.jpg "Rotate Amount")
+
+   **Feito isto, basta dar um "play" e o seu cubo deve girar como no GIF abaixo!**
+
+   ![alt text](assets/unity-cube-rotation.gif "Cube Rotation")
